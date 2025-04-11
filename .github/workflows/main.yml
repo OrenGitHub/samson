@@ -20,7 +20,7 @@ jobs:
         with:
           ref: 'v3382'
 
-      - name: send the whole repo to dhscanner
+      - name: send the entire repo to dhscanner
         run: |
           tar -cz . | curl -v -X POST \
             -H "X-Code-Sent-To-External-Server: false" \
